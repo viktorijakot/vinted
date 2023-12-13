@@ -27,3 +27,30 @@ export function loadBrandsFromServer(brandId){
         payload: brandId
     }
 }
+
+export function loadBrandsAllFromServer(brandsAllId){
+    return {
+        type: types.LOAD_BRANDS_ALL_FROM_SERVER,
+        payload: brandsAllId
+    }
+}
+export function filterProductsBrand(filterBrandId) {
+    return {
+        type: types.FILTER_PRODUCTS_BRAND,
+        payload: parseInt(filterBrandId)
+    };
+}
+
+export function loadCategoriesFromServer(categories){
+    return {
+        type: types.LOAD_CATEGORIES_FROM_SERVER,
+        payload: categories
+    }
+}
+
+export function filterCategories(filterCategoriesID) {
+    return {
+        type: types.FILTER_CATEGORIES,
+        payload: parseInt(filterCategoriesID)
+    };
+}

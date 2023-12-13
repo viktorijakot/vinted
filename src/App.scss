@@ -20,14 +20,15 @@ body {
 
   .loading {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    // align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 200px;
 
     &__container {
       display: flex;
-      justify-content: center;
+      // justify-content: center;
+      margin-top: 50px;
       align-items: center;
       flex-direction: column;
       height: 100vh;
@@ -76,57 +77,87 @@ body {
       }
     }
   }
-  .products{
-    width: 90%;
+  .news {
+    color: black;
+    width: 95%;
+    h2 {
+      margin-bottom: -70px;
+    }
+  }
+  .products {
+    width: 100%;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     gap: 20px;
 
     .product {
       margin-top: 120px;
-      width: 200px;
+      width: 180px;
       height: 250px;
       &__img {
         height: 100%;
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover
+          object-fit: cover;
         }
       }
-      &__user{
+      &__user {
         margin-bottom: 5px;
         font-size: small;
-        color: grey
-        
+        color: grey;
       }
-      &__price{
+      &__price {
         margin-top: 5px;
         font-weight: 500;
       }
-      &__size{
+      &__size {
         margin-top: 5px;
         font-size: small;
-        color: grey
+        color: grey;
       }
-      &__brand{
+      &__brand {
         margin-top: 5px;
         font-size: small;
-        color: grey
+        color: grey;
+        padding-bottom: 50px;
       }
-      .userBox{
+      .userBox {
         display: flex;
         align-items: center;
-        gap:5px
+        gap: 5px;
       }
       .userBox__avatar img {
         width: 20px;
         height: 20px;
         border-radius: 50%;
       }
-      
+    }
+  }
+  .brandsAll {
+    width: 95%;
+    color: black;
+    margin-bottom: 40px;
+    &__list {
+      margin-top: 50px;
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .listItem {
+      border: 0.1px solid rgba(128, 128, 128, 0.307);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 500;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.736);
+    }
+    .listItem:hover{
+      background-color: rgba(193, 191, 191, 0.205);
+      transition-duration: 0.25s;
     }
   }
 }
